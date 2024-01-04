@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Proposal</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="sidebar">
+		
+      <img src="logo.png" style="width:70px;height: 80px;margin-bottom: 20px;margin-left:80px ;">
+      <div class="div" style="height:20px;"></div>
+      <img src="admin.png" style="width:90px;height: 100px;margin-bottom: 20px;margin-left: 80px;">
+  <ul class="side-menu top" style="margin-left: 10px;">
+    
+    <li>
+      <a href="index.html">
+        <i class="bx bx-home" ></i>
+        <span class="text">About</span>
+      </a>
+    </li>
+    <li>
+      <a href="minutesofmeetings.html">
+        <i class='bx bxs-group' ></i>
+        <span class="text">Minutes of Meetings</span>
+      </a>
+    </li>
+    <li>
+      <a href="cec.html">
+        <i class='bx bxs-group' ></i>
+        <span class="text">CEC Reports</span>
+      </a>
+    </li>
+    <li>
+      <a href="project.html">
+        <i class='bx bxs-group' ></i>
+        <span class="text">Deposite by Project Proponents </span>
+      </a>
+    </li>
+          <li>
+      <a href="rmbfapproved.html">
+        <i class='bx bxs-group' ></i>
+        <span class="text">RMBF Approved Work</span>
+      </a>
+    </li>
+          <li>
+      <a href="rmbfexpenditure.html">
+        <i class='bx bxs-group' ></i>
+        <span class="text">RMBF Expenditure</span>
+      </a>
+    </li>
+          <li>
+      <a href="audit.html">
+        <i class='bx bxs-group' ></i>
+        <span class="text">Audit report</span>
+      </a>
+    </li>
+          <li>
+      <a href="interest.html">
+        <i class='bx bxs-group' ></i>
+        <span class="text">Interest Accumed</span>
+      </a>
+    </li>
+          <li>
+      <a href="newproposal.html">
+        <i class='bx bxs-group' ></i>
+        <span class="text">New Proposal</span>
+      </a>
+    </li>
+  </ul>
+  
+</section>
+
+<section id="content" >
+      <div id="details">
+        <div class="head">      
+          <nav style="background-color: blue;">
+              <i class='bx bx-menu' ></i>
+          </nav>
+        </div>
+        <div class="content">
+          <br /><br />
+          <h1 style="color: blue">New Proposal</h1>
+          <br />
+          <hr />
+          <br />
+          <div id="form1">
+            <br /><br />
+            <div class="para">
+              <div class="left">
+                <label for="Content">Name of Project</label>
+                <input name="Content" type="Text" id="projectName" />
+                <div class="bre" style="margin-top: 20px"></div>
+                <label for="Header">DPR of Project</label>
+                <input name="Header"type="File" style="border: 1px solid black" id="dpr" />
+                <div class="break"></div>
+                
+                <div class="int1">
+                  <label for="">Justification of Project:-</label>
+                  <label for="Justification">a. Justification for Sik Specific Project</label>
+                  <textarea name="Justification" id="justificationA" cols="40" rows="7"></textarea>
+                  <br />
+                  <input type="file" name="Documenta" id="documentA" style="border: 1px solid black"/>
+                  <div style="color: gray; font-size: small">
+                    Upload supporting Document
+                  </div>
+                  <br />
+                  <label for="Alignment">b. Justification of Best Alignment</label>
+                  <textarea name="Alignment" id="justificationB" cols="10" rows="7"></textarea>
+                  <br />
+                  <input type="file" name="Documentb" id="documentB" style="border: 1px solid black"/>
+                  <div style="color: gray; font-size: small">
+                    Upload supporting Document
+                  </div>
+                </div>
+                <div class="break"></div>
+                <label for="KmlArea">Kml of Project Area</label>
+                <input type="file" name="KmlArea" id="kmlProjectArea" style="border: 1px solid black"/>
+                <div style="color: gray; font-size: small">sq.m</div>
+                <div class="break"></div>
+                <label for="Cost">Cost of Project</label>
+                <input type="file" name="Cost" id="cost" style="border: 1px solid black"/>
+                <div style="color: gray; font-size: small">sq.m</div>
+                <div class="break"></div>
+                <div class="int1" >
+                    <label for="area">Affected Area:-</label>
+                    <label for="a">(a) WL Sanctuary</label>
+                    <input type="text" name="a" id="wlSanctuary" />
+                    <div style="color: gray; font-size: small">sq.m</div>
+                    <label for="b">(b) RF</label>
+                    <input type="text" name="b" id="rf" />
+                    <div style="color: gray; font-size: small">sq.m</div>
+                    <label for="c">(c) Ridge</label>
+                    <input type="text" name="c" id="ridge" />
+                    <div style="color: gray; font-size: small">sq.m</div>
+                    <label for="d">(d) PF</label>
+                    <input type="text" name="d" id="pf" />
+                    <div style="color: gray; font-size: small">sq.m</div>
+                    <label for="e">(e) Buffer area for sanctuary</label>
+                    <input type="text" name="e" id="bufferArea"/>
+                    <div style="color: gray; font-size: small">sq.m</div>
+                </div>
+                <div class="break"></div>
+              </div>
+
+              <div class="mid" style="width: 150px"></div>
+
+              <div class="right">
+                <label for="trees">No. of Trees in project area</label>
+                <input type="text" name="trees" id="treesInProjectArea" />
+                <br /><br />
+                <div class="int1" style="background-color: rgb(233, 232, 232)">
+                    
+                  <label class="big_Label" for="No">No. of trees proposed to:-</label>
+                  <label for="Saved">Saved</label>
+                  <input type="text" name="Saved" id="saved" />
+                  <div class="break"></div>
+                  <label for="Transplanted">Transplanted</label>
+                  <input type="text" name="Transplanted" id="transplanted" />
+                  <div class="break"></div>
+                  <label for="Headback">Headback</label>
+                  <input type="text" name="Headback" id="headback" />
+                  <div class="break"></div>
+                  <label for="Pruned">Pruned</label>
+                  <input type="text" name="Pruned" id="Pruned" />
+                  <div class="break"></div>
+                  <label for="Felled">Felled</label>
+                  <input type="text" name="Felled" id="felled"  style="margin-bottom: 40px;"/>
+                </div>
+                <br />
+                <br /><br/>
+                <br />
+                <div class="int1">
+                <label class="big_Label" for="Compensatory" >Site for Compensatory Plantation</label>
+
+                <label for="ckml">Upload kml</label>
+                <input type="text" name="ckml" id="kmlCompensationSite" />
+
+                <label for="Address">Address</label>
+                <input type="text" name="Address" id="addressCompensationSite" />
+
+                </div>
+                <br /><br/>
+                <div class="int1">
+                <label class="big_Label" for="Afforestation" >Site for Compensatory Afforestation</label>
+
+              <label for="akml">Upload kml</label>
+              <input type="text" name="akml" id="kmlAfforestationSite" />
+
+              <label for="Address">Address</label>
+              <input type="text" name="Address" id="addressAfforestationSite" />
+
+              </div>
+                <br /><br/>
+                <label for="ConstitutionArea" >Total Constitution Area</label>
+                <input type="text" name="ConstitutionArea" id="totalConstitutionArea" />
+            </div>
+            </div>
+            <br /><br />
+            <div class="buttons">
+              <button id="savebtn" onclick="publish(event)" style=" width: 5rem; height: 2rem;border: none; background-color: rgb(202, 237, 226);">
+                Save
+              </button>
+              <button id="updatebtn" style="color: white;width: 5rem; height: 2rem; border: none;background-color: blue;">
+                Update
+              </button>
+            </div>
+        </div>
+          <div  class="tab" style="background-color: white">
+            <table id="table">
+               <thead>
+                <tr>
+                  <th >Name of Project</th>
+                  <th >DPR of Project</th>
+                  <th>Justification (a)</th>
+                  <th>Document (a)</th>
+                  <th>Justification (b)</th>
+                  <th>Document (b)</th>
+                  <th >Kml of Project Area</th>
+                  <th >Cost of Project</th>
+                  <th>WL Sanctuary</th>
+                  <th>RF</th>
+                  <th>Ridge</th>
+                  <th>PF</th>
+                  <th >No. of Trees in project area</th>
+                  <th>Saved</th>
+                  <th>Transplanted</th>
+                  <th>Headback</th>
+                  <th>Puned</th>
+                  <th>Felled</th>
+                  <th>Upload KML</th>
+                  <th>Address</th>
+                  <th>Upload KML</th>
+                  <th>Address</th>
+                  <th >Total Constitution Area</th>
+                  <th >Action</th>           
+              </tr>
+               </thead>
+  
+               <tr>
+                <td>ww</td>
+                <td>ww</td>
+                <td>ww</td>
+                <td>ww</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+               </tr>
+            </table>
+          </div>
+        </div>
+        <!-- Add your content here -->
+      </div>
+</section>
+
+    <script>
+ function publish(event) {
+  event.preventDefault();
+  var projectName = document.getElementById('projectName').value;
+  var dpr = document.getElementById('dpr').value;
+  var justificationA = document.getElementById('justificationA').value;
+  var documentA = document.getElementById('documentA').value;
+  var justificationB = document.getElementById('justificationB').value;
+  var documentB = document.getElementById('documentB').value;
+  var kmlProjectArea = document.getElementById('kmlProjectArea').value;
+  var cost = document.getElementById('cost').value;
+  var wlSanctuary = document.getElementById('wlSanctuary').value;
+  var rf = document.getElementById('rf').value;
+  var ridge = document.getElementById('ridge').value;
+  var pf = document.getElementById('pf').value;
+  var bufferArea = document.getElementById('bufferArea').value;
+  var saved = document.getElementById('saved').value;
+  var transplanted = document.getElementById('transplanted').value;
+  var headback = document.getElementById('headback').value;
+  var puned = document.getElementById('puned').value;
+  var felled = document.getElementById('felled').value;
+  var treesInProjectArea = document.getElementById('treesInProjectArea').value;
+  var kmlCompensationSite = document.getElementById('kmlCompensationSite').value;
+  var addressCompensationSite = document.getElementById('addressCompensationSite').value;
+  var kmlAfforestationSite = document.getElementById('kmlAfforestationSite').value;
+  var addressAfforestationSite = document.getElementById('addressAfforestationSite').value;
+  var totalConstitutionArea = document.getElementById('totalConstitutionArea').value;
+  var projectTableElement = document.getElementById('table');
+  var newrow = projectTableElement.insertRow(table.rows.length);
+  var cel1 = newrow.insertCell(0);
+  var cel2 = newrow.insertCell(1);
+  var cel3 = newrow.insertCell(2);
+  var cel4 = newrow.insertCell(3);
+  var cel5 = newrow.insertCell(4);
+  var cel6 = newrow.insertCell(5);
+  var cel7 = newrow.insertCell(6);
+  var cel8 = newrow.insertCell(7);
+  var cel9 = newrow.insertCell(8);
+  var cel10 = newrow.insertCell(9);
+  var cel11 = newrow.insertCell(10);
+  var cel12 = newrow.insertCell(11);
+  var cel13 = newrow.insertCell(12);
+  var cel14 = newrow.insertCell(13);
+  var cel15 = newrow.insertCell(14);
+  var cel16 = newrow.insertCell(15);
+  var cel17 = newrow.insertCell(16);
+  var cel18 = newrow.insertCell(17);
+  var cel19 = newrow.insertCell(18);
+  var cel20 = newrow.insertCell(19);
+  var cel21 = newrow.insertCell(20);
+  var cel22 = newrow.insertCell(21);
+  var cel23 = newrow.insertCell(22);
+  var cel24 = newrow.insertCell(23);
+  cel1.innerHTML = projectName;
+  cel2.innerHTML = dpr;
+  cel3.innerHTML = justificationA;
+  cel4.innerHTML = documentA;
+  cel5.innerHTML = justificationB;
+  cel6.innerHTML = documentB;
+  cel7.innerHTML = kmlProjectArea;
+  cel8.innerHTML = cost;
+  cel9.innerHTML = wlSanctuary;
+  cel10.innerHTML = rf;
+  cel11.innerHTML = ridge;
+  cel12.innerHTML = pf;
+  cel13.innerHTML = bufferArea;
+  cel14.innerHTML = saved;
+  cel15.innerHTML = transplanted;
+  cel16.innerHTML = headback;
+  cel17.innerHTML = puned;
+  cel18.innerHTML = felled;
+  cel19.innerHTML = treesInProjectArea;
+  cel20.innerHTML = kmlCompensationSite;
+  cel21.innerHTML = addressCompensationSite;
+  cel22.innerHTML = kmlAfforestationSite;
+  cel23.innerHTML = addressAfforestationSite;
+  cel24.innerHTML = totalConstitutionArea;
+  // Add the edit and delete buttons or any other buttons you need
+  cel25.innerHTML = '<button onclick="editData(this)"><img src="edit.png" style="height=10px;width:20px;"></button>' + '<button onclick="deleteData(this)"><img src="delete.png" style="height=10px;width:20px;"></button>';
+}
+      function editData(button) {
+        // Get the parent row of the clicked button
+        let row = button.parentNode.parentNode;
+
+        // Get the cells within the row
+        let header = row.cells[1];
+        let content = row.cells[2];
+        // Prompt the user to enter updated values
+        let nameInput = prompt("Enter the updated Header:", header.innerHTML);
+        let emailInput = prompt(
+          "Enter the updated Content:",
+          content.innerHTML
+        );
+        // Update the cell contents with the new values
+        header.innerHTML = nameInput;
+        content.innerHTML = emailInput;
+      }
+      function deleteData(button) {
+        // Get the parent row of the clicked button
+        let row = button.parentNode.parentNode;
+
+        // Remove the row from the table
+        row.parentNode.removeChild(row);
+      }
+
+      function menu() {
+        var wide = document.getElementById("toggle-bar");
+        var details = document.getElementById("details");
+
+        // Check the current width
+        var currentWidth = wide.style.width || getComputedStyle(wide).width;
+
+        // Toggle between 0 and a default width (e.g., 200px)
+        wide.style.width = currentWidth === "0px" ? "200px" : "0";
+
+        // Add transition to smooth the movement
+        details.style.transition = "margin-left 0.3s ease";
+
+        // Adjust the margin-left of the details class
+        details.style.marginLeft = currentWidth === "0px" ? "300px" : "0";
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

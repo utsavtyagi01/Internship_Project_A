@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposite by Project Proponents</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="sidebar">
+		
+        <img src="logo.png" style="width:70px;height: 80px;margin-bottom: 20px;margin-left:80px ;">
+        <div class="div" style="height:20px;"></div>
+        <img src="admin.png" style="width:90px;height: 100px;margin-bottom: 20px;margin-left: 80px;">
+		<ul class="side-menu top" style="margin-left: 10px;">
+			
+			<li>
+				<a href="index.html">
+					<i class="bx bx-home" ></i>
+					<span class="text">About</span>
+				</a>
+			</li>
+			<li>
+				<a href="minutesofmeetings.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Minutes of Meetings</span>
+				</a>
+			</li>
+			<li>
+				<a href="cec.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">CEC Reports</span>
+				</a>
+			</li>
+			<li>
+				<a href="project.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Deposite by Project Proponents </span>
+				</a>
+			</li>
+            <li>
+				<a href="rmbfapproved.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">RMBF Approved Work</span>
+				</a>
+			</li>
+            <li>
+				<a href="rmbfexpenditure.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">RMBF Expenditure</span>
+				</a>
+			</li>
+            <li>
+				<a href="audit.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Audit report</span>
+				</a>
+			</li>
+            <li>
+				<a href="interest.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Interest Accumed</span>
+				</a>
+			</li>
+            <li>
+				<a href="newproposal.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">New Proposal</span>
+				</a>
+			</li>
+		</ul>
+		
+	</section>
+
+    <section id="content">
+    
+    <div id="details">
+        <div class="head">
+                
+            <nav style="background-color: blue;">
+                <i class='bx bx-menu' ></i>
+            </nav>
+        </div>
+        <div class="content">
+            <br><br>
+            <h1 style="color: blue;">Deposite by Project Proponents</h1>
+            <br>
+            <hr>
+            <br>
+            <div id="form1">
+                <br><br>
+                <div class="para">
+                    <div class="left">
+
+                        <label for="no">Name Of Project</label>
+                        <select name="Paragraph No." id="number">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                        <div class="break"></div>
+                        <label for="Content">Project Cost</label>
+                        <input name="Content" type="Text" id="content1"/>
+                    </div>
+                    <div class="mid" style="width:150px">
+
+                    </div>
+                    <div class="right">
+                        <label for="Header">Deposited Amount</label>
+                        <input name="Header" type="Text" id="header"/>
+                        <div class="break"></div>
+                     
+                        <label for="Upload">Challan/Check No.</label>
+                        <input name="Upload" type="text" style="border: 1px solid black;" id="picture"/>
+
+                    </div>
+                    <div class="secondleft" style="margin-top: 15px;">
+                        <label for="Dated">Dated</label>
+                        <input type="Date" name="Dated" id="date" />
+                    </div>
+                    
+                    
+                </div>
+                <br><br>
+                <div class="buttons">
+                    <button  id="savebtn" onclick="publishToTable(event)" style="width:5rem;height:2rem;border: none;background-color: rgb(202, 237, 226);">Save</button>
+                <button id="updatebtn" style="color:white;width:5rem;height:2rem;border: none;background-color: blue;">Update</button>
+                </div>   
+            </div>
+           <div class="tab" style="background-color: white;">
+            <table id="table">
+               <thead>
+                <tr>
+                    <th>Name of Project</th>
+                    <th>Deposited Amount</th>
+                    <th>Project Cost</th>
+                    <th>Challan/Check No.</th>
+                    <th>Dated</th>
+                    <th>Action</th>
+                </tr>
+               </thead>
+            </table>
+           </div>
+        </div>
+        <!-- Add your content here -->
+    </div>
+    </section>
+
+
+
+   <script>
+   function publishToTable(event) {
+    event.preventDefault();
+    var number = document.getElementById('number').value;
+    var header = document.getElementById('header').value;
+    var content = document.getElementById('content1').value;
+    var  picture= document.getElementById('picture').value;
+    var  date= document.getElementById('date').value;
+    
+    var tableElement = document.getElementById('table');
+    var newrow = tableElement.insertRow(1);
+
+    var cel1 = newrow.insertCell(0);
+    var cel2 = newrow.insertCell(1);
+    var cel3 = newrow.insertCell(2);
+    var cel4 = newrow.insertCell(3);
+    var cel5 = newrow.insertCell(4);
+    var cel6 = newrow.insertCell(5);
+
+    cel1.innerHTML = number;
+    cel2.innerHTML = header;
+    cel3.innerHTML = content;
+    cel4.innerHTML = picture;
+    cel5.innerHTML = date;
+    cel6.innerHTML ='<button onclick="editData(this)"><img src="edit.png" style="height=10px;width:20px;"></button>'+ 
+                '<button onclick="deleteData(this)"><img src="delete.png" style="height=10px;width:20px;"></button>'; 
+            
+}
+function editData(button) { 
+            
+            // Get the parent row of the clicked button 
+            let row = button.parentNode.parentNode; 
+            
+            // Get the cells within the row 
+            let number = row.cells[0]; 
+            let header= row.cells[1]; 
+            let content = row.cells[2]; 
+            let picture = row.cells[3]; 
+            let date = row.cells[4]; 
+            // Prompt the user to enter updated values 
+            let number1 = 
+                prompt("Enter the updated Project Number:", 
+                    number.innerHTML); 
+            let Amt = 
+                prompt("Enter the updated Deposited Amount:", 
+                    header.innerHTML); 
+                    let cost = 
+                prompt("Enter the updated Project Cost:", 
+                    content.innerHTML); 
+            
+                    let challan = 
+                prompt("Enter the updated Challan/ Check No.:", 
+                    picture.innerHTML); 
+                    let date1 = 
+                prompt("Enter the updated Date:", 
+                    date.innerHTML);         // Update the cell contents with the new values 
+            number.innerHTML=number1;
+            header.innerHTML=Amt;
+            content.innerHTML=cost;
+            picture.innerHTML=challan;
+            date.innerHTML=date1;   
+        } 
+        function deleteData(button) { 
+            
+            // Get the parent row of the clicked button 
+            let row = button.parentNode.parentNode; 
+  
+            // Remove the row from the table 
+            row.parentNode.removeChild(row); 
+        } 
+
+function menu() {
+    var wide = document.getElementById("toggle-bar");
+    var details = document.getElementById("details");
+
+    // Check the current width
+    var currentWidth = wide.style.width || getComputedStyle(wide).width;
+
+    // Toggle between 0 and a default width (e.g., 200px)
+    wide.style.width = currentWidth === "0px" ? "200px" : "0";
+
+    // Add transition to smooth the movement
+    details.style.transition = "margin-left 0.3s ease";
+
+    // Adjust the margin-left of the details class
+    details.style.marginLeft = currentWidth === "0px" ? "300px" : "0";
+}
+
+
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>
