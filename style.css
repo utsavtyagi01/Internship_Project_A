@@ -348,6 +348,30 @@ body.dark {
 		display: none;
 	}
 }
+@media screen and (max-width: 576px) {
+    #sidebar {
+        width: 0;
+        overflow: hidden;
+    }
+
+    #content {
+        width: 100%;
+        left: 0;
+    }
+
+    #sidebar.hide {
+        width: 0;
+    }
+
+    #sidebar.hide .side-menu li a {
+        width: 0;
+        transition: width .3s ease;
+    }
+
+    #content nav .bx.bx-menu {
+        display: block;
+    }
+}
 
 
 
@@ -397,31 +421,6 @@ body.dark {
 	#content main .table-data .todo .todo-list {
 		min-width: 420px;
 	}
-}
-
-@media screen and (max-width: 576px) {
-    #sidebar {
-        width: 0;
-        overflow: hidden;
-    }
-
-    #content {
-        width: 100%;
-        left: 0;
-    }
-
-    #sidebar.hide {
-        width: 0;
-    }
-
-    #sidebar.hide .side-menu li a {
-        width: 0;
-        transition: width .3s ease;
-    }
-
-    #content nav .bx.bx-menu {
-        display: block;
-    }
 }
 *{
     margin: 0;
@@ -499,16 +498,17 @@ body {
     height:2rem;
   }
 
-  .left .int1 .input{
-    height:0rem;
+  label{
+	margin-bottom: 10px;
   }
+
   .int1{
     background-color: rgb(249, 249, 249);
     padding:10px;
     border-radius: 10px;
   }
   .int1 input{
-    height:2rem;
+    height: 2rem;
   }
   .left, .secondleft,.int0, .int1 {
     display: flex;
@@ -519,6 +519,10 @@ body {
     display: flex;
     flex-direction: column;
    
+  }
+
+  textarea{
+	height: 50px;
   }
   table{
     margin:30px;
@@ -546,6 +550,5 @@ body {
     height:2rem;
     color: #000000;
     text-align: left;
+	
   }
-textarea{
-	height:50px;
